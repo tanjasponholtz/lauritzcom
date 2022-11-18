@@ -1,0 +1,19 @@
+---
+const { titel, beskrivelse, deluxe } = Astro.props;
+---
+
+<article>
+  <h3>{titel}</h3>
+  <p>{beskrivelse}</p>
+
+  {deluxe == true && <p>deluxe</p>}
+</article>
+
+<style>
+  article {
+    outline: 2px solid red;
+  }
+  h3 {
+    background: cyan;
+  }
+</style>
